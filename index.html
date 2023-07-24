@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOLORES NELSON</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;;
+        }
+
+        nav {
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navlist {
+            margin-left: 70px;
+        }
+
+        .navlist li {
+            display: inline-block;
+            margin-left: 15px;
+        }
+
+        .navlist li a, nav h3 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .slider {
+            display: grid;
+            width: 100% !important;
+            max-width: 800px !important;
+            height: 500px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .slides {
+            width: 100% !important;
+            max-width: 800px !important;
+            height: 500px;
+            position: absolute;
+            transition: all .7s;
+            text-align: center;
+        }
+
+        .slides img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .btn {
+            position: absolute;
+            background-color: hsl(0, 0%, 100%);
+            color: black;
+            border: none;
+            padding: 10px 13px;
+            border-radius: 50%;
+            z-index: 1;
+            font-weight: 800;
+        }
+
+        .btn:active {
+            transform: scale(1.1);
+        }
+
+        .fa-chevron-left {
+            top: 45%;
+            left: 2%;
+        }
+
+        .fa-chevron-right {
+            top: 45%;
+            right: 2%;
+        }
+
+        .container {
+            width: 800px;
+            margin: 3rem auto 2rem;
+        }
+
+        .container-text h4 {
+            padding-bottom: 1rem;
+        }
+
+        .socials {
+            padding: 3rem 0 0;
+        }
+
+        .socials li {
+            display: inline-block;
+            margin-left: 15px;
+        }
+
+        footer {
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        @media (max-width: 576px) {
+            nav{
+                padding: 30px 20px;
+            }
+
+            nav h3 {
+                font-size: 14px;
+            }
+
+            .navlist {
+                margin-left: 0;
+                font-size: 12px;
+            }
+
+            .slider, .slides {
+                max-width: 0;
+                height: 350px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 20px;
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h3 class="navlogo"><a href="./index.html">DOLORES NELSON</a></h3>
+        <ul class="navlist">
+            <li><a href="./bio.html">Bio</a></li>
+            <li><a href="./recentPaint.html">Recent Paintings</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="slider">
+            <div class="slides">
+                <img src="./img/abstract.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="./img/blackwhite.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="./img/painting.jpg" alt="">
+            </div>
+
+
+            <i class="fa-solid btn fa-chevron-left"></i>
+            <i class="fa-solid btn fa-chevron-right"></i>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-text">
+                <h4>"Imagination is the mainspring of every artist's actions" T. Kantor</h4>
+                <p>
+                    Undoubtedly, such mainspring of art for me is theatre - the most important source of inspiration and
+                    spiritual experiences both, as a viewer and an artist. Both aspects are equally important for me
+                    anyway. The first directly influences the topics of my paintings (related not so much to the
+                    theatrical
+                    space itself, as to the human being existing in it). The second one makes my paintings come to life
+                    and
+                    gives them tree-dimensional characteristic. My paintings do not try to reconstruct reality nor
+                    comment on
+                    it. On the one hand, I consider them studies of human nature, emotions, sensual experiences and
+                    moods.
+                    On the other hand, it becomes the first stage of the world constructed of this scenic reality.
+                </p>
+            </div>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="footlogo">
+            <h3>© DOLORES NELSON</h3>
+        </div>
+    </footer>
+
+    <script src="./home.js"></script>
+</body>
+
+</html>
